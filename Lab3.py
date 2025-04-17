@@ -10,7 +10,7 @@ P = 1 + term
 n = 2
 
 while abs(term / n) >= epsilon:
-    term = (math.log(ax) ** n) / n
+    term = (math.log(ax ** n) ** n) / n
     P += term
     n += 1
 
