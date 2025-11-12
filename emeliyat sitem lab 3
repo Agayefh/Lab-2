@@ -1,0 +1,197 @@
+1. Disklərin yoxlanılması (Check Disk)
+
+İzah:
+Disklərin yoxlanılması əməliyyatı sabit disklərdə (HDD və ya SSD) olan səhvləri aşkarlamaq və onları düzəltmək üçün istifadə olunur.
+Windows əməliyyat sistemində bu əməliyyat Check Disk (chkdsk) proqramı vasitəsilə yerinə yetirilir.
+
+Əsas funksiyalar:
+
+Fayl sistemindəki səhvləri (məsələn, zədələnmiş sektorları) tapır və düzəldir.
+
+Diskdə oxunmayan və ya korlanmış faylları bərpa etməyə çalışır.
+
+Diskin ümumi sağlamlıq vəziyyətini yoxlayır.
+
+İcra qaydası:
+
+“This PC” → Disk üzərində sağ klik → “Properties” → “Tools” → “Check”.
+və ya Komanda sətrində:
+
+chkdsk C: /f /r
+
+2. Disklərin defraqmentasiyası (Disk Defragmentation)
+
+İzah:
+Zamanla fayllar diskin müxtəlif yerlərinə səpələnir. Bu da diskin işləmə sürətini azaldır.
+Defraqmentasiya prosesi bu faylları ardıcıl (yan-yana) yerləşdirərək diskin oxuma-yazma sürətini artırır.
+
+Əsas məqsədi:
+
+Sistem performansını artırmaq
+
+Diskin işini optimallaşdırmaq
+
+Fayllara daha sürətli çıxış təmin etmək
+
+İcra qaydası:
+
+“Defragment and Optimize Drives” proqramı vasitəsilə aparılır.
+
+Avtomatik planlama da mümkündür (həftəlik və ya aylıq).
+
+3. Disklərin təmizlənməsi (Disk Cleanup)
+
+İzah:
+Disk təmizləmə proqramı sistemdə artıq və lazımsız faylları silmək üçün istifadə olunur.
+Bu fayllar arasında müvəqqəti sistem faylları, internet keşləri, Recycle Bin-dəki məlumatlar və köhnə yeniləmə faylları olur.
+
+Faydaları:
+
+Boş yaddaş yerini artırır
+
+Sistem sürətini yüksəldir
+
+Kompüterin ümumi performansını yaxşılaşdırır
+
+İcra qaydası:
+
+“Disk Cleanup” proqramını aç → Disk seç → Lazımsız faylları işarələ → “OK” bas.
+
+4. Diskin formatlaşması (Disk Formatting)
+
+İzah:
+Formatlaşdırma diskin bütün məlumatlarını silərək onu yenidən istifadə üçün hazırlayır.
+Bu proses diski yeni fayl sistemi ilə (NTFS, FAT32 və s.) qurur.
+
+Növləri:
+
+Quick Format (Sürətli format): Faylları silir, amma dərin yoxlama aparmır.
+
+Full Format (Tam format): Faylları silir və diski zədələnmiş sahələr üçün yoxlayır.
+
+Diqqət:
+Format əməliyyatı zamanı diskin bütün məlumatları itirilir. Əvvəlcə ehtiyat nüsxə çıxarılmalıdır.
+
+İcra qaydası:
+
+“This PC” → Disk üzərində sağ klik → “Format”.
+və ya Komanda sətrində:
+
+format D: /fs:NTFS
+
+5. Arxivləşdirmə proqramı (Archiving Software)
+
+İzah:
+Arxivləşdirmə proqramları bir və ya bir neçə faylı sıxılmış (compress) formada saxlayaraq diskdə yerə qənaət edir.
+Eyni zamanda böyük faylların internet üzərindən göndərilməsini asanlaşdırır.
+
+Məşhur arxivləşdirmə proqramları:
+
+WinRAR
+
+7-Zip
+
+WinZip
+
+Əsas funksiyalar:
+
+Faylları ZIP, RAR, 7z və s. formatlara sıxışdırmaq
+
+Parolla qorumaq
+
+Böyük faylları hissələrə bölmək
+
+Arxivdən çıxarma (extract) funksiyası
+
+6. Windows əməliyyat sisteminin bərpası (System Restore / Recovery)
+
+İzah:
+Bəzən sistemdə proqram və ya sürücü (driver) dəyişikliklərindən sonra səhvlər yaranır.
+System Restore funksiyası sistemi əvvəlki sağlam vəziyyətinə qaytarmağa imkan verir.
+
+Əsas funksiyalar:
+
+Əvvəlcədən yaradılmış “bərpa nöqtəsi”nə (restore point) qayıdır.
+
+Sistem fayllarını və parametrləri bərpa edir (fayllar qorunur).
+
+Səhv yeniləmələr və zədələnmiş sistem dəyişikliklərini aradan qaldırır.
+
+İcra qaydası:
+
+“Control Panel” → “Recovery” → “Open System Restore”
+və ya “Settings → System → Recovery → Advanced startup”.
+
+Nəticə:
+
+Xüsusi xidmət proqramları sistemin stabil və səmərəli işləməsini təmin edir. Onların köməyi ilə istifadəçi diskin sağlamlığını yoxlaya, təmizləyə, optimallaşdıra, məlumatları qoruyub saxlayan arxivlər yarada və lazım olduqda sistemi əvvəlki vəziyyətə qaytara bilər.
+
+
+
+
+
+
+
+
+
+
+
+1. Disklərin yoxlanılması (Check Disk)
+
+Check Disk — kompüterdəki sabit disklərin və ya digər yaddaş qurğularının səhvlərini yoxlamaq və bərpa etmək üçün istifadə olunan xüsusi xidmətdir. Windows əməliyyat sistemində bu proqram chkdsk (Check Disk) adlanır.
+
+📘 Check Disk-in məqsədi:
+
+Fayl sistemindəki (NTFS və FAT32 kimi) səhvləri aşkar etmək.
+
+Zədələnmiş sektorları tapmaq və istifadə üçün yararsız elan etmək.
+
+Fayl strukturlarını bərpa etmək.
+
+Diskin ümumi sağlamlığını yoxlamaq.
+
+⚙️ Check Disk-i işə salmağın yolları:
+🔹 1. Qrafik interfeys (GUI) vasitəsilə:
+
+This PC → istədiyin diskə (məsələn, Local Disk (C:) ) sağ klik et.
+
+Properties → Tools bölməsinə keç.
+
+“Error Checking” hissəsində Check düyməsini seç.
+
+Sistem diski yoxlayacaq və səhv aşkar edilərsə bərpa təklif edəcək.
+
+🔹 2. Əmr sətri (Command Prompt) vasitəsilə:
+
+Start menyusuna “cmd” yaz, sağ klik et → “Run as administrator”.
+
+Əmr sətrinə bu əmri daxil et:
+
+chkdsk C: /f /r
+
+
+Burada:
+
+C: – yoxlanacaq disk sürücüsünün hərfidir;
+
+/f – aşkar olunan səhvləri avtomatik düzəldir;
+
+/r – zədələnmiş sektorları tapır və məlumatı sağlam sektorlara köçürür.
+
+Qeyd: Əgər bu əmri sistem diski üçün işlədirsənsə (məsələn, C:), kompüterin yenidən başladılmasından sonra yoxlama aparılır.
+
+🧠 Check Disk-in faydaları:
+
+Diskdəki səhvləri vaxtında aşkarlayır və sistemin çökməsinin qarşısını alır.
+
+Kompüterin performansını və sabitliyini artırır.
+
+Məlumat itkisi riskini azaldır.
+
+⚠️ Diqqət edilməli məqamlar:
+
+Check Disk əməliyyatı bir qədər vaxt apara bilər, xüsusilə disk böyükdürsə.
+
+Proses zamanı kompüteri söndürmək olmaz.
+
+Yoxlamadan əvvəl vacib faylların ehtiyat nüsxəsini saxlamaq tövsiyə olunur.
